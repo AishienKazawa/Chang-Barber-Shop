@@ -1,0 +1,52 @@
+body,
+html {
+  scroll-behavior: smooth;
+  font-family: $ff-body;
+  font-size: 14px;
+}
+
+body {
+  background-color: $ctm-secondary;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  color: $ctm-primary;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+p {
+  opacity: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a[role="button"],
+button[type="button"],
+button[type="submit"] {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+[class*="outline"] {
+  border: 1.8px solid;
+}
+
+.hero-content {
+  opacity: 0;
+}

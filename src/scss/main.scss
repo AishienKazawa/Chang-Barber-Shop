@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Bebas+Neue&family=Source+Sans+Pro:wght@400;700&display=swap");
+
+//override boostrap properties
+$border-radius: 0.175rem;
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+@import "./utils/variables";
+
+$custom-colors: (
+  "ctm-pri": $ctm-primary,
+  "ctm-sec": $ctm-secondary,
+  "ctm-acc": $ctm-accent,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./utils/base";
+@import "./utils/mixin";
+
+@import "./components/navbar";
+@import "./components/cursor";
+@import "./components/button";
+@import "./components/lightbox";
+@import "./components/carousel";
+@import "./components/load";
+
+@import "./partials/footer";
+@import "./partials/cta";
+@import "./partials/initService";
+
+@import "./page/homepage";
+@import "./page/about";
+@import "./page/services";
+@import "./page/price";
+@import "./page/contact";

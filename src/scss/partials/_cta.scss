@@ -1,0 +1,38 @@
+.cta {
+  @include ctm-bg("../assets/cta-bg.png");
+
+  .cover {
+    padding: 7rem 0;
+    background-color: rgba(#000, 0.8);
+
+    .cta-content {
+      @media screen and (min-width: $bp-xl) {
+        padding: 0 7rem;
+      }
+      &-row {
+        row-gap: 1rem;
+
+        @media screen and (min-width: $bp-md) {
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        h2 {
+          font-size: clamp(4.3rem, calc(1vw + 4rem), 100vw);
+          font-family: $ff-focus;
+          line-height: 4.7rem;
+        }
+
+        .col:nth-child(2) {
+          width: fit-content;
+
+          @media screen and (min-width: $bp-xl) {
+            padding: 0 4rem;
+          }
+        }
+
+        @include ctm-button(1.5rem, 2.5rem);
+      }
+    }
+  }
+}

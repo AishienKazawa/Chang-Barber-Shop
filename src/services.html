@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- swiperjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="service-page">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- brandname -->
+        <a class="navbar-brand" href="index.html"
+          ><img src="./assets/logo.svg" alt="logo"
+        /></a>
+
+        <!-- hamburger menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- navlinks -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="price.html">Price</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-ctm-acc" href="contact.html" role="button"
+                >Book Now</a
+              >
+            </li>
+          </ul>
+
+          <!-- social links -->
+          <ul class="social-navbar-nav">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/" class="nav-link"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/" class="nav-link"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.instagram.com/" class="nav-link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/" class="nav-link"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero">
+      <div class="cover">
+        <div class="hero-content container">
+          <h1>SERVICES</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+            commodo, lorem morbi convallis scelerisque sed non aliquam id.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="service">
+      <div class="services container">
+        <!--headings -->
+        <h2 class="sec-title">OUR <mark>SERVICES</mark></h2>
+
+        <!-- service items -->
+        <div
+          class="service-items row row-cols-1 row-cols-md-2 row-cols-lg-3 gsap-pop"
+        >
+          <div class="service-item col">
+            <img src="./assets/razor.png" alt="s-icon" />
+            <h3>SHAVING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+          <div class="service-item col">
+            <img src="./assets/scissors.png" alt="s-icon" />
+            <h3>HAIRCUT</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+          <div class="service-item col">
+            <img src="./assets/comb.png" alt="s-icon" />
+            <h3>TRIMMING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+          <div class="service-item col">
+            <img src="./assets/brush.png" alt="s-icon" />
+            <h3>STYLING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+          <div class="service-item col">
+            <img src="./assets/facial-mask.png" alt="s-icon" />
+            <h3>FACIAL</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+          <div class="service-item col">
+            <img src="./assets/hairdryer.png" alt="s-icon" />
+            <h3>COLORING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="testimonial">
+      <div class="testimonial-content container gsap-pop">
+        <div class="swiper swiper-testimonial">
+          <div class="swiper-wrapper swiper-testimonial-wrapper">
+            <div class="swiper-slide swiper-testimonial-slide">
+              <div class="client-avatar">
+                <img src="./assets/profile.jpeg" alt="client-pic" />
+              </div>
+              <div class="client-statement">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tellus amet, vestibulum ante nascetur. Lacus, aliquet enim ut
+                  massa penatibus justo, molestie. In dui morbi vel, a aliquet.
+                  Platea nec leo eget feugiat cras diam risus. Nullam viverra id
+                  quis congue nibh ullamcorper. Nunc vivamus nec tincidunt
+                  mattis aliquet consectetur non.
+                </p>
+              </div>
+              <h4>THOMAS DRAKE</h4>
+              <h6>CEO, Squarefond</h6>
+            </div>
+            <div class="swiper-slide swiper-testimonial-slide">
+              <div class="client-avatar">
+                <img src="./assets/profile.jpeg" alt="client-pic" />
+              </div>
+              <div class="client-statement">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tellus amet, vestibulum ante nascetur. Lacus, aliquet enim ut
+                  massa penatibus justo, molestie. In dui morbi vel, a aliquet.
+                  Platea nec leo eget feugiat cras diam risus.
+                </p>
+              </div>
+              <h4>THOMAS DRAKE</h4>
+              <h6>CEO, Squarefond</h6>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="swiper-button-next swiper-testimonial-np">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="swiper-button-prev swiper-testimonial-np">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- working hours -->
+    <section class="wh">
+      <div class="wh-content container">
+        <h2 class="sec-title">WORKING <mark>HOURS</mark></h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim eleifend
+          senectus orci penatibus hendrerit id.
+        </p>
+        <ul class="working-hours">
+          <li class="working-hours-item">
+            <h4>Monday - Friday</h4>
+            <span>9am - 10pm</span>
+          </li>
+          <li class="working-hours-item">
+            <h4>Saturday</h4>
+            <span>11am - 5pm</span>
+          </li>
+          <li class="working-hours-item">
+            <h4>Sunday</h4>
+            <span>Closed</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer-container container">
+        <!-- small screen display -->
+        <a class="brandname" href="index.html"
+          ><img src="./assets/logo.svg" alt="logo"
+        /></a>
+
+        <!-- navlinks -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <!-- large screen display -->
+          <li class="nav-item logo">
+            <a class="logo" href="#"
+              ><img src="./assets/logo.svg" alt="logo"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="price.html">Price</a>
+          </li>
+        </ul>
+
+        <!-- contact info -->
+        <div class="footer-contact">
+          <span>+63 921 654 4566</span>
+          <span
+            >Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO
+            65584-5678</span
+          >
+
+          <hr />
+
+          <div class="row">
+            <div class="col">© 2022 . mark rencie nolasco</div>
+            <div class="col-5">
+              <!-- Social Links -->
+              <ul class="social-navbar-nav">
+                <li class="nav-item">
+                  <a href="https://www.facebook.com/" class="nav-link"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://twitter.com/" class="nav-link"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.instagram.com/" class="nav-link"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.linkedin.com/" class="nav-link"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- bootstrap -->
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- swiperjs -->
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+  ></script>
+  <script defer src="./js/swiper.js"></script>
+
+  <!-- greensock -->
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+  ></script>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+  ></script>
+
+  <!-- custom script -->
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/animation.js"></script>
+</html>

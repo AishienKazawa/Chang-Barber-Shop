@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiperjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="homepage no-scroll">
+    <div id="loading-wrapper">
+      <div id="loading-text">LOADING</div>
+      <div id="loading-content"></div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- brandname -->
+        <a class="navbar-brand" href="index.html"
+          ><img src="./assets/logo.svg" alt="logo"
+        /></a>
+
+        <!-- hamburger menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- navlinks -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="price.html">Price</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-ctm-acc" href="contact.html" role="button"
+                >Book Now</a
+              >
+            </li>
+          </ul>
+
+          <!-- social links -->
+          <ul class="social-navbar-nav">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/" class="nav-link"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/" class="nav-link"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.instagram.com/" class="nav-link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/" class="nav-link"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero">
+      <div class="cover">
+        <div class="hero-content container">
+          <div class="hero-content-row row">
+            <!-- swiper slides -->
+            <div class="hero-ls col col-md-8 col-xxl-6">
+              <div class="headings">
+                <h1>Welcome to Chang Barbershop</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
+                  hac adipiscing semper interdum in hendrerit nunc varius
+                  turpis. Habitant viverra aliquam sodales pulvinar. Donec urna,
+                  adipiscing nec sed tellus. Ut pulvinar ac cras amet purus
+                  gravida nibh ut.
+                </p>
+
+                <!-- group buttons -->
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <a class="btn btn-ctm-acc" href="" role="button"
+                    >Discover More</a
+                  >
+                  <button type="button" class="mob-btn btn">
+                    Play Video <i class="fa-solid fa-play ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- play button -->
+            <div class="hero-rs col">
+              <span class="pulse-button"
+                ><i class="fa-solid fa-play ms-1"></i
+              ></span>
+            </div>
+
+            <!-- video present -->
+            <div class="lightbox-video">
+              <video width="80%" controls>
+                <source src="./assets/video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!-- brief info -->
+        <div class="hero-touch row">
+          <div class="hero-touch-col col">
+            <img src="./assets/phone.svg" alt="phone-icon" />
+            <div>
+              <h6>+63 921 654 4566</h6>
+              <span
+                >Contact us for our services or send us message through
+                form.</span
+              >
+            </div>
+          </div>
+          <div class="hero-touch-col col">
+            <img src="./assets/map-pin.svg" alt="location-icon" />
+            <div>
+              <h6>Main Location</h6>
+              <span
+                >Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO
+                65584-5678</span
+              >
+            </div>
+          </div>
+          <div class="hero-touch-col col">
+            <img src="./assets/clock.svg" alt="time-icon" />
+            <div>
+              <h6>Daily: 9am - 10pm</h6>
+              <span class="d-block">Saturday: 11am - 5pm</span>
+              <span>Sunday: Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about">
+      <div class="about-content container">
+        <div class="about-content-row row row-cols-1 row-cols-lg-2">
+          <!-- brief story -->
+          <div class="about-ls col">
+            <h2 class="sec-title">WELCOME TO <mark>CHANG</mark></h2>
+
+            <p>
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nes ciunt. Neque porro quisquam est, qui dolorem
+              ipsum quia dolor sit amet, consectetur, adipisci. Lorem ipsum
+              dolor maker penci design
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor
+              pellentesque aenean suspendisse elit in ornare. Elit ipsum ut
+              risus sapien. Ultrices sed nunc porttitor pellentesque enim duis.
+              Nisl tellus amet hac faucibus pretium, sit accumsan. At est
+              eleifend arcu, ultricies lectus.
+            </p>
+
+            <a class="btn btn-outline-ctm-acc" href="about.html" role="button"
+              >Read More</a
+            >
+          </div>
+
+          <!-- image grid -->
+          <div class="about-rs col">
+            <figure>
+              <img src="./assets/about-pic-1.jpg" alt="about-1" />
+            </figure>
+            <figure>
+              <img src="./assets/about-pic-2.jpg" alt="about-2" />
+            </figure>
+            <figure>
+              <img src="./assets/about-pic-3.jpg" alt="about-3" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery">
+      <!-- categories -->
+      <ul class="gallery-catg-nav">
+        <li class="catg-link">
+          <a class="catg-item active" role="button" data-target="all">All</a>
+        </li>
+        <li class="catg-link">
+          <a class="catg-item" role="button" data-target="hairstyle"
+            >Hairstyle</a
+          >
+        </li>
+        <li class="catg-link">
+          <a class="catg-item" role="button" data-target="beards">Beards</a>
+        </li>
+        <li class="catg-link">
+          <a class="catg-item" role="button" data-target="mustache"
+            >Mustaches</a
+          >
+        </li>
+        <li class="catg-link">
+          <a class="catg-item" role="button" data-target="facial">Facial</a>
+        </li>
+      </ul>
+
+      <!-- gallery carousel -->
+      <div class="swiper swiper-gallery">
+        <div class="swiper-gallery-slider swiper-wrapper"></div>
+      </div>
+    </section>
+
+    <!-- lightbox for image preview -->
+    <div class="lightbox-images">
+      <img src="" alt="image-preview" id="lightbox-image" />
+    </div>
+
+    <!-- services -->
+    <section class="service">
+      <div class="services container">
+        <!--headings -->
+        <h2 class="sec-title">OUR <mark>SERVICES</mark></h2>
+
+        <!-- service items -->
+        <div class="service-items row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="service-item col">
+            <img src="./assets/razor.png" alt="s-icon" />
+            <h3>SHAVING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+          <div class="service-item col">
+            <img src="./assets/scissors.png" alt="s-icon" />
+            <h3>HAIRCUT</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+          <div class="service-item col">
+            <img src="./assets/comb.png" alt="s-icon" />
+            <h3>TRIMMING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+          <div class="service-item col">
+            <img src="./assets/brush.png" alt="s-icon" />
+            <h3>STYLING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+          <div class="service-item col">
+            <img src="./assets/facial-mask.png" alt="s-icon" />
+            <h3>FACIAL</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+          <div class="service-item col">
+            <img src="./assets/hairdryer.png" alt="s-icon" />
+            <h3>COLORING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit
+              eget adipiscing magna scelerisque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- price -->
+    <section class="price">
+      <div class="price-container container">
+        <h2 class="sec-title">OFFER <mark>PRICE</mark></h2>
+
+        <!-- categories -->
+        <ul class="price-catg-nav">
+          <li class="catg-link">
+            <a class="catg-item active" data-target="hairstyle" role="button"
+              >Hairstyle</a
+            >
+          </li>
+          <li class="catg-link">
+            <a class="catg-item" data-target="beards" role="button">Beards</a>
+          </li>
+          <li class="catg-link">
+            <a class="catg-item" data-target="mustache" role="button"
+              >Mustaches</a
+            >
+          </li>
+          <li class="catg-link">
+            <a class="catg-item" data-target="facial" role="button">Facial</a>
+          </li>
+        </ul>
+
+        <!-- price List -->
+        <div class="price-list row row-cols-1 row-cols-md-2"></div>
+
+        <a class="btn btn-outline-ctm-acc" href="price.html" role="button"
+          >All Price</a
+        >
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="testimonial">
+      <div class="testimonial-content container gsap-pop">
+        <div class="swiper swiper-testimonial">
+          <div class="swiper-wrapper swiper-testimonial-wrapper">
+            <!-- client testimonial -->
+            <div class="swiper-slide swiper-testimonial-slide">
+              <div class="client-avatar">
+                <img src="./assets/profile.jpeg" alt="client-pic" />
+              </div>
+              <div class="client-statement">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tellus amet, vestibulum ante nascetur. Lacus, aliquet enim ut
+                  massa penatibus justo, molestie. In dui morbi vel, a aliquet.
+                  Platea nec leo eget feugiat cras diam risus. Nullam viverra id
+                  quis congue nibh ullamcorper. Nunc vivamus nec tincidunt
+                  mattis aliquet consectetur non.
+                </p>
+              </div>
+              <h4>THOMAS DRAKE</h4>
+              <h6>CEO, Squarefond</h6>
+            </div>
+            <div class="swiper-slide swiper-testimonial-slide">
+              <div class="client-avatar">
+                <img src="./assets/profile.jpeg" alt="client-pic" />
+              </div>
+              <div class="client-statement">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tellus amet, vestibulum ante nascetur. Lacus, aliquet enim ut
+                  massa penatibus justo, molestie. In dui morbi vel, a aliquet.
+                  Platea nec leo eget feugiat cras diam risus.
+                </p>
+              </div>
+              <h4>THOMAS DRAKE</h4>
+              <h6>CEO, Squarefond</h6>
+            </div>
+          </div>
+
+          <!-- buttons -->
+          <div class="swiper-button-next swiper-testimonial-np">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="swiper-button-prev swiper-testimonial-np">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cover">
+        <div class="cta-content container">
+          <div class="cta-content-row row">
+            <div class="col col-md-7">
+              <h2>Best Facial Hair Trim At Home Treatment</h2>
+            </div>
+            <div class="col col-md-4">
+              <a
+                class="btn btn-outline-ctm-acc"
+                href="contact.html"
+                role="button"
+                >Booking Appointment</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- latest news -->
+    <section class="blog">
+      <div class="blog-content container">
+        <h2 class="sec-title">LATEST <mark>NEWS</mark></h2>
+
+        <div class="swiper swiper-blog">
+          <div class="swiper-wrapper swiper-blog-slider">
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="./assets/blog-1.jpeg"
+                  class="card-img-top"
+                  alt="blog-1"
+                />
+                <div class="card-body">
+                  <span class="card-body-date">
+                    <i class="fa-regular fa-calendar"></i> 25 August, 2022
+                  </span>
+                  <h3>THE POWER OF BARBER SHOP SHADE</h3>
+
+                  <a class="btn" href="#" role="button"
+                    >READ MORE<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="./assets/blog-2.jpeg"
+                  class="card-img-top"
+                  alt="blog-1"
+                />
+                <div class="card-body">
+                  <span class="card-title">
+                    <i class="fa-regular fa-calendar"></i> 20 September, 2022
+                  </span>
+                  <h3>THE MAIN SECRET OF EVERY BARBERS</h3>
+
+                  <a class="btn" href="#" role="button"
+                    >READ MORE<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <img
+                  src="./assets/blog-3.jpeg"
+                  class="card-img-top"
+                  alt="blog-1"
+                />
+                <div class="card-body">
+                  <span class="card-title">
+                    <i class="fa-regular fa-calendar"></i> 15 July, 2022
+                  </span>
+                  <h3>DON'T LOOSE HOPE AT THE FIRST PLACE</h3>
+
+                  <a class="btn" href="#" role="button"
+                    >READ MORE<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination gsap-pop"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer-container container">
+        <!-- small screen display -->
+        <a class="brandname" href="index.html"
+          ><img src="./assets/logo.svg" alt="logo"
+        /></a>
+
+        <!-- navlinks -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <!-- large screen display -->
+          <li class="nav-item logo">
+            <a class="logo" href="#"
+              ><img src="./assets/logo.svg" alt="logo"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="price.html">Price</a>
+          </li>
+        </ul>
+
+        <!-- contact info -->
+        <div class="footer-contact">
+          <span>+63 921 654 4566</span>
+          <span
+            >Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO
+            65584-5678</span
+          >
+
+          <hr />
+
+          <div class="row">
+            <div class="col">© 2022 . mark rencie nolasco</div>
+            <div class="col-5">
+              <!-- Social Links -->
+              <ul class="social-navbar-nav">
+                <li class="nav-item">
+                  <a href="https://www.facebook.com/" class="nav-link"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://twitter.com/" class="nav-link"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.instagram.com/" class="nav-link"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.linkedin.com/" class="nav-link"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- bootstrap -->
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- swiperjs -->
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+  ></script>
+  <script defer src="./js/swiper.js"></script>
+
+  <!-- greensock -->
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+  ></script>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"
+  ></script>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+  <!-- custom script -->
+  <script defer src="./js/function.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/animation.js"></script>
+</html>

@@ -1,0 +1,156 @@
+.contact-page {
+  .map-container {
+    height: 30rem;
+    width: 100%;
+
+    .map-cover {
+      width: 100%;
+      height: 30rem;
+      position: absolute;
+      top: 0;
+      display: grid;
+      place-items: center;
+      background-color: rgba($ctm-secondary, 0.8);
+      visibility: visible;
+    }
+
+    #map {
+      width: 100%;
+      height: 30rem;
+    }
+  }
+
+  .get-in-touch {
+    background-image: url("../assets/texture.png");
+    padding: 7rem 2rem;
+
+    @media screen and (min-width: $bp-md) {
+      padding: 3rem;
+    }
+
+    &-content {
+      opacity: 0;
+      .get-in-touch-row {
+        .get-in-touch-ls {
+          @media screen and (min-width: $bp-md) {
+            padding: 3rem;
+          }
+
+          @include sec-title();
+
+          ul {
+            padding: 0;
+
+            li {
+              display: flex;
+              gap: 1rem;
+              color: $ctm-primary;
+              margin-top: 4rem;
+
+              img {
+                width: 1.4rem;
+                height: 1.4rem;
+              }
+
+              span {
+                opacity: 0.3;
+              }
+            }
+          }
+        }
+
+        .get-in-touch-rs {
+          padding: 3rem 0;
+
+          @media screen and (min-width: $bp-lg) {
+            padding: 3rem 5rem;
+          }
+
+          form {
+            display: grid;
+            gap: 3rem;
+
+            input {
+              width: 100%;
+              padding: 1rem;
+            }
+
+            .selections {
+              width: inherit;
+              display: grid;
+              gap: 1.5rem;
+
+              @media screen and (min-width: $bp-xl) {
+                grid-template-columns: 1fr 1fr 1fr;
+              }
+
+              select {
+                color: $ctm-accent;
+                border: none;
+                background-color: $ctm-secondary;
+                background-image: none;
+                padding: 1rem;
+                box-shadow: none;
+
+                option {
+                  color: $ctm-accent;
+                  border: 2px solid $ctm-accent;
+
+                  &:hover {
+                    color: $ctm-secondary;
+                    background-color: $ctm-accent;
+                  }
+                }
+              }
+
+              [class*="input"] {
+                padding: 0;
+                position: relative;
+                display: flex;
+                align-items: center;
+                border: 2px solid $ctm-accent;
+
+                input {
+                  color: $ctm-accent;
+                  border: none;
+                  background-color: $ctm-secondary;
+                }
+
+                i {
+                  font-size: 1.2rem;
+                  position: absolute;
+                  top: 50%;
+                  right: 0;
+                  transform: translate(-100%, -50%);
+                  color: $ctm-accent;
+                }
+              }
+            }
+
+            @include ctm-button($y: 1.25rem, $x: 1.8rem) {
+              margin: 2.58rem auto 0;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mapboxgl-popup-content {
+  width: 280px;
+  text-align: center;
+  line-height: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  background-color: $ctm-secondary !important;
+  padding: 1rem 2rem !important;
+
+  & > * {
+    margin: 0;
+  }
+}
+
+.mapboxgl-popup-tip {
+  display: none;
+}

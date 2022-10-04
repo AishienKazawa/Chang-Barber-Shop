@@ -1,0 +1,73 @@
+.footer {
+  background-color: $ctm-secondary;
+  padding: 3rem 0 1rem;
+
+  .navbar-nav {
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1.5rem;
+
+    .logo {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .nav-link {
+      color: $ctm-primary;
+      transition: all 0.3s linear;
+
+      &:hover {
+        color: $ctm-accent;
+      }
+
+      &.active-link {
+        color: $ctm-accent;
+      }
+    }
+  }
+
+  .brandname {
+    img {
+      width: 10rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &-contact {
+    margin: 2rem auto 0;
+
+    span {
+      display: block;
+      margin: 0.8rem 0;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+
+  hr {
+    margin-top: 2rem;
+  }
+
+  .row {
+    .social-navbar-nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1.5rem;
+    }
+  }
+}

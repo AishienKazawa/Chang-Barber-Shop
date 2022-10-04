@@ -1,0 +1,62 @@
+.testimonials {
+  background-color: $ctm-secondary;
+  padding: 5rem 0;
+  position: relative;
+
+  .quote-bg {
+    width: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 7rem 20rem !important;
+  }
+
+  .profile {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto 2.8rem;
+  }
+
+  .statement {
+    text-align: center;
+
+    h4 {
+      font-size: 2rem;
+      font-family: $ff-focus;
+      color: $ctm-accent;
+      margin: 3rem 0 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 0 8rem;
+    }
+  }
+}
+
+[class^="swiper-button"] {
+  font-size: 2rem;
+  padding: 0;
+  width: 3rem !important;
+  opacity: 0.7;
+
+  @media screen and (min-width: 992px) {
+    border: 2px solid $ctm-primary;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &::after {
+    content: unset !important;
+    font-family: unset !important;
+    all: none;
+  }
+}

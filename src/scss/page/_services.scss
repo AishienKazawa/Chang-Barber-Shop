@@ -1,0 +1,155 @@
+.service-page {
+  .hero {
+    height: calc(60vh - 6.313rem);
+    @include ctm-bg("../assets/services-hero.png");
+
+    @media screen and (min-width: $bp-md) {
+      height: calc(42vh - 6.313rem);
+
+      @media screen and (min-width: $bp-lg) {
+        height: calc(70vh - 6.313rem);
+      }
+    }
+
+    .cover {
+      height: 100%;
+      background-color: rgba($ctm-secondary, 0.8);
+      display: grid;
+      align-items: center;
+
+      .hero-content {
+        h1 {
+          font-size: clamp(5rem, 1vw, 100vw);
+          font-family: $ff-focus;
+          line-height: 85%;
+
+          @media screen and (min-width: $bp-md) {
+            font-size: clamp(5rem, calc(1vw + 6rem), 100vw);
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    @include sec-title($mx: auto, $mb: 5rem, $text-align: center);
+  }
+
+  .testimonial {
+    background-color: $ctm-secondary;
+    padding: 7rem 0;
+    position: relative;
+
+    @media screen and (min-width: $bp-xl) {
+      padding: 7rem 15rem;
+    }
+
+    &::before {
+      content: url("../assets/qoute.png");
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-content {
+      .swiper {
+        &-wrapper {
+          .swiper-slide {
+            text-align: center;
+            display: grid;
+            place-items: center;
+            gap: 0.2rem;
+
+            & > * {
+              margin: 0;
+            }
+            .client-avatar {
+              width: 6rem;
+              height: 6rem;
+              border-radius: 5rem;
+              overflow: hidden;
+
+              @media screen and (min-width: $bp-lg) {
+                margin-bottom: 1rem;
+              }
+            }
+
+            .client-statement {
+              padding: 1rem 0;
+
+              p {
+                margin: 0;
+              }
+
+              @media screen and (min-width: $bp-lg) {
+                padding: 0 10rem;
+              }
+            }
+
+            h4 {
+              font-size: 2rem;
+              font-family: $ff-focus;
+              color: $ctm-accent;
+
+              @media screen and (min-width: $bp-lg) {
+                margin-top: 1rem;
+              }
+            }
+          }
+        }
+
+        [class^="swiper-button"] {
+          width: 3rem;
+          font-size: 2rem;
+          padding: 0;
+          border: 2px solid $ctm-primary;
+          opacity: 0.7;
+          display: none;
+
+          &::after {
+            content: "";
+            all: none;
+          }
+
+          @media screen and (min-width: $bp-lg) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        &-pagination {
+          margin-top: 2rem;
+
+          @media screen and (min-width: $bp-xl) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .wh {
+    @include ctm-bg("../assets/texture.png");
+    padding: 7rem 0;
+
+    .wh-content {
+      text-align: center;
+
+      @include sec-title($mb: 2.5rem, $mx: auto, $text-align: center);
+
+      .working-hours {
+        margin-top: 3rem;
+
+        &-item {
+          margin-top: 1rem;
+
+          h4 {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

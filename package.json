@@ -1,0 +1,35 @@
+{
+  "name": "chang-barber-shop",
+  "version": "1.0.0",
+  "source": "index.html",
+  "scripts": {
+    "dev": "node-sass src/scss -w scss/main.scss -o src/css",
+    "copy:assets": "copyfiles -u 1 \"/src/assets/**/*\" public",
+    "build:sass": "sass --no-source-map src/scss:public/css",
+    "copy:html": "copyfiles -u 1 ./src/*.html public",
+    "copy": "npm-run-all --parallel copy:*",
+    "watch:assets": "onchange \"src/assets/**/*\" -- npm run copy:assets",
+    "watch:html": "onchange 'src/*.html' -- npm run copy:html",
+    "watch:sass": "sass --no-source-map --watch src/scss:public/css",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "browser-sync start --server public --files public",
+    "start": "npm-run-all copy --parallel watch serve",
+    "build": "npm-run-all copy:html build:*",
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
+  },
+  "author": "mrn",
+  "license": "ISC",
+  "keywords": [],
+  "description": "simple static website for barber shop using html, scss/css and javasript and has a framework/library like swiper js and gsap",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "bootstrap": "^5.2.0",
+    "browser-sync": "^2.27.7",
+    "dotenv": "^16.0.2",
+    "node-sass": "^7.0.3",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^9.1.0"
+  },
+  "main": "index.js",
+  "devDependencies": {}
+}

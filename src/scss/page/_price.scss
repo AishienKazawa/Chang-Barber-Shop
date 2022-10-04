@@ -1,0 +1,183 @@
+.service-price {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.5rem;
+  align-items: flex-end;
+
+  & > * {
+    margin: 0;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 2px dotted $ctm-accent;
+    height: 2px;
+    width: 100%;
+  }
+}
+
+.price-page {
+  .hero {
+    height: calc(60vh - 6.313rem);
+    @include ctm-bg("../assets/services-hero.png");
+
+    @media screen and (min-width: $bp-md) {
+      height: calc(42vh - 6.313rem);
+
+      @media screen and (min-width: $bp-lg) {
+        height: calc(70vh - 6.313rem);
+      }
+    }
+
+    .cover {
+      height: 100%;
+      background-color: rgba($ctm-secondary, 0.8);
+      display: grid;
+      align-items: center;
+
+      .hero-content {
+        h1 {
+          font-size: clamp(5rem, 1vw, 100vw);
+          font-family: $ff-focus;
+          line-height: 85%;
+
+          @media screen and (min-width: $bp-md) {
+            font-size: clamp(5rem, calc(1vw + 6rem), 100vw);
+          }
+        }
+      }
+    }
+  }
+
+  .price {
+    @include ctm-bg("../assets/texture.png");
+    padding: 7rem 0;
+
+    @media screen and (min-width: $bp-lg) {
+      padding: 7rem 15rem;
+    }
+
+    .price-content {
+      text-align: center;
+
+      @include sec-title($mx: auto, $text-align: center);
+
+      [class*="catg-nav"] {
+        margin: 2rem 0;
+      }
+
+      .price-list {
+        .list-item {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          align-items: center;
+          gap: 1rem;
+          padding: 0 2rem;
+          margin: 1rem 0;
+          text-align: left;
+
+          .service-item {
+            width: 7rem;
+            height: 7rem;
+
+            img {
+              height: 100%;
+            }
+          }
+
+          .service-detail {
+            height: 100%;
+            display: grid;
+            grid-template-rows: auto 1fr;
+
+            p {
+              margin: 0.4rem 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .plan {
+    background-color: $ctm-secondary;
+    padding: 7rem 0;
+
+    @media screen and (min-width: $bp-lg) {
+      padding: 7rem 15rem;
+    }
+
+    @include sec-title($mb: 5rem, $mx: auto, $text-align: center);
+
+    &-content {
+      .plan-cards {
+        row-gap: 2rem;
+        margin: 0 0.5rem;
+
+        @media screen and (min-width: $bp-md) {
+          margin: 0;
+        }
+        .plan-card {
+          padding: 0;
+
+          @media screen and (min-width: $bp-md) {
+            &:nth-child(odd) {
+              transform: scale(0.9);
+            }
+          }
+
+          &:nth-child(even) {
+            .card {
+              background-color: $ctm-accent;
+
+              & > * {
+                color: $ctm-secondary;
+              }
+
+              .plan-feature,
+              .plan-feature i {
+                color: $ctm-secondary;
+              }
+            }
+          }
+
+          .card {
+            padding: 2rem;
+            background-color: #302a22;
+
+            h3 {
+              font-weight: bold;
+              margin: 0;
+            }
+
+            h2 {
+              font-size: 3rem;
+              font-weight: 700;
+
+              line-height: 3.5rem;
+
+              @media screen and (min-width: $bp-xl) {
+                line-height: 5rem;
+              }
+            }
+
+            .plan-features {
+              padding: 0;
+
+              .plan-feature {
+                margin: 1rem 0;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+              }
+            }
+
+            @include ctm-button(1.1rem, 3rem) {
+              border-width: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@mixin ctm-bg($url, $bg-attachment: "scroll") {
+  background-image: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: $bg-attachment;
+}
+
+@mixin ctm-button($y: 1.2rem, $x: 1rem) {
+  .btn[type="button"],
+  .btn[role="button"],
+  .btn[type="submit"] {
+    padding: $y $x;
+    @content;
+  }
+
+  .btn[role="button"] {
+    width: fit-content;
+    display: block;
+  }
+}
+
+@mixin sec-title($mt: 0, $mx: 0, $mb: 0, $inc: 4rem, $text-align: left) {
+  h2.sec-title {
+    font-size: clamp(4.3rem, calc(1vw + #{$inc}), 100vw);
+    font-family: $ff-focus;
+    text-align: $text-align;
+    line-height: 4rem;
+    margin: $mt $mx $mb;
+
+    @content;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 4.5rem;
+      height: 4px;
+      margin: 0.9rem $mx 0;
+      background-color: $ctm-primary;
+    }
+
+    mark {
+      color: $ctm-accent;
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+}
+
+@mixin fixed($z-index: 2000) {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $z-index;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

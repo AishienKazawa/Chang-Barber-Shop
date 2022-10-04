@@ -1,0 +1,24 @@
+// [class^="cursor"] {
+//   border-radius: 50%;
+//   position: absolute;
+//   transition-timing-function: ease-out;
+//   pointer-events: none;
+//   z-index: 10000;
+// }
+
+// .cursor-small {
+//   width: 10px;
+//   height: 10px;
+//   transform: scale(1);
+//   background-color: $ctm-primary;
+//   mix-blend-mode: difference;
+//   transition-duration: 50ms;
+// }
+
+// .cursor-big {
+//   width: 20px;
+//   height: 20px;
+//   border: 1px solid rgba($ctm-accent, 0.5);
+//   transform: scale(3);
+//   transition-duration: 200ms;
+// }
