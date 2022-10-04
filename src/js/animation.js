@@ -79,23 +79,6 @@ ScrollTrigger.matchMedia({
       urlParts[urlParts.length - 1] == "" ||
       urlParts[urlParts.length - 1] == "index.html"
     ) {
-      /* loading screen */
-      let loaded = false;
-
-      window.addEventListener("load", () => {
-        const loaderContainer = document.querySelector("#loading-wrapper");
-
-        gsap.fromTo(
-          loaderContainer,
-          {
-            alpha: 1,
-          },
-          { alpha: 0, display: "none" }
-        );
-
-        document.body.classList.remove("no-scroll");
-      });
-
       gsap.fromTo(
         ".hero-ls .headings > *",
         {
@@ -427,4 +410,21 @@ ScrollTrigger.matchMedia({
       );
     }
   },
+});
+
+/* loading screen */
+let loaded = false;
+
+window.addEventListener("load", () => {
+  const loaderContainer = document.querySelector("#loading-wrapper");
+
+  gsap.fromTo(
+    loaderContainer,
+    {
+      alpha: 1,
+    },
+    { alpha: 0, display: "none" }
+  );
+
+  document.body.classList.remove("no-scroll");
 });
