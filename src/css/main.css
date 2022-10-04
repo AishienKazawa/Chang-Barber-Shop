@@ -8752,12 +8752,20 @@ button[type="submit"] {
   display: none;
   z-index: 2000; }
   .lightbox-images img {
-    max-width: 50%;
+    max-width: 90%;
     max-height: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media screen and (min-width: 48rem) {
+      .lightbox-images img {
+        max-width: 70%;
+        max-height: 80%; } }
+  @media screen and (min-width: 48rem) and (min-width: 75rem) {
+    .lightbox-images img {
+      max-width: 40%;
+      max-height: 80%; } }
 
 .gallery {
   background-color: #111010;
